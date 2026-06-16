@@ -1,0 +1,48 @@
+# Create or overwrite .gitignore with all necessary exclusions
+echo "# Python cache
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+
+# Secrets - NEVER COMMIT THESE
+credentials.json
+token.pickle
+render_credentials.txt
+render_token.txt
+desktop.py
+*.txt
+!requirements.txt
+
+# Downloads
+downloads/
+*.mp4
+*.webm
+*.mp3
+*.mkv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Render
+render.yaml
+" > .gitignore
